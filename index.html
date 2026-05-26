@@ -45,6 +45,29 @@
       <!-- right card -->
       <div class="card output_card">
         <p class="card-title">YOUR BILL SUMMARY</p>
+        <!-- Total Tip -->
+        <div class="output-row">
+          <p class="output-label">Total Tip</p>
+          <p class="output-value" id="out-tip">Rs 0.00</p>
+        </div>
+
+        <!-- Grand Total -->
+        <div class="output-row">
+          <p class="output-label">Grand Total</p>
+          <p class="output-value" id="out-total">Rs 0.00</p>
+        </div>
+
+        <!-- Per Person -->
+        <div class="output-row">
+          <p class="output-label">
+            Per Person
+            <small>Each person pays</small>
+          </p>
+          <p class="output-value big" id="out-person">Rs 0.00</p>
+        </div>
+
+        <!-- Reset Button -->
+        <button id="reset-btn">RESET</button>
       </div>
     </div>
     <script src="index.js"></script>
