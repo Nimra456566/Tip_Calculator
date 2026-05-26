@@ -1,5 +1,7 @@
 # Tip_Calculator
-Assessment task for   DevWeekends Fellowship
+
+Assessment task for DevWeekends Fellowship
+
 # Tip Calculator & Bill Splitter
 
 A simple web app to calculate tip and split the bill among friends — updates live as you type, no calculate button needed.
@@ -19,4 +21,3 @@ That's it! No installation needed.
 - Inline error validation
 - Reset button
 - Mobile friendly
-
