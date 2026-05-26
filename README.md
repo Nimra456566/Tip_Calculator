@@ -14,9 +14,13 @@ A simple web app to calculate tip and split the bill among friends — updates l
 That's it! No installation needed.
 
 ## Features
- Live calculation as you type
+
+Live calculation as you type
 Tip preset buttons (10%, 15%, 20%) + custom tip
 Split bill among multiple people
 Inline error validation
 Reset button
 
+## UR
+
+https://nimra456566.github.io/Tip_Calculator/
