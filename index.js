@@ -52,3 +52,51 @@ function calculate() {
   outTotal.textContent = `Rs ${grand.toFixed(2)}`;
   outPerson.textContent = `Rs ${perPerson.toFixed(2)}`;
 }
+function validate() {
+  let valid = true;
+
+  // Bill check
+  if (billInput.value <= 0 || billInput.value === "") {
+    billError.textContent = "Bill must be positive!";
+    valid = false;
+  } else {
+    billError.textContent = "";
+  }
+
+  // Tip check
+  if (tipInput.value < 0 || tipInput.value > 100) {
+    tipError.textContent = "Tip must be 0 to 100!";
+    valid = false;
+  } else {
+    tipError.textContent = "";
+  }
+
+  // People check
+  if (peopleInput.value < 1 || peopleInput.value === "") {
+    peopleError.textContent = "Minimum 1 person!";
+    valid = false;
+  } else {
+    peopleError.textContent = "";
+  }
+
+  return valid;
+}
+document.getElementById("reset-btn").addEventListener("click", () => {
+  // Inputs clear karo
+  billInput.value = "";
+  tipInput.value = "";
+  peopleInput.value = "";
+
+  // Buttons se active hato
+  tipBtns.forEach((b) => b.classList.remove("active"));
+
+  // Errors clear karo
+  billError.textContent = "";
+  tipError.textContent = "";
+  peopleError.textContent = "";
+
+  // Output reset karo
+  outTip.textContent = "Rs 0.00";
+  outTotal.textContent = "Rs 0.00";
+  outPerson.textContent = "Rs 0.00";
+});
