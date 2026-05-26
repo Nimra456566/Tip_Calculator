@@ -14,10 +14,9 @@ A simple web app to calculate tip and split the bill among friends — updates l
 That's it! No installation needed.
 
 ## Features
+ Live calculation as you type
+Tip preset buttons (10%, 15%, 20%) + custom tip
+Split bill among multiple people
+Inline error validation
+Reset button
 
-- Live calculation as you type
-- Tip preset buttons (10%, 15%, 20%) + custom tip
-- Split bill among multiple people
-- Inline error validation
-- Reset button
-- Mobile friendly
