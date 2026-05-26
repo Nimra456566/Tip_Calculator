@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 32px;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -38,8 +38,149 @@ h1 {
 }
 
 .card-title {
-  font-size: 0.75rem;
+  font-size: 12px;
   letter-spacing: 2px;
   color: #7a7f9a;
   margin-bottom: 24px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #7a7f9a;
+  margin-bottom: 8px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.prefix {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00e5a0;
+  font-weight: 600;
+}
+
+input[type="number"] {
+  width: 100%;
+  background: #21253a;
+  border: 1.5px solid #2e3248;
+  border-radius: 12px;
+  padding: 13px 14px 13px 36px;
+  color: #f0f0f0;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="number"]:focus {
+  border-color: #00e5a0;
+}
+
+.error-msg {
+  color: #ff6b6b;
+  font-size: 12px;
+  margin-top: 6px;
+  min-height: 18px;
+}
+
+.tip-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tip-btn {
+  background: #21253a;
+  border: 1.5px solid #2e3248;
+  border-radius: 10px;
+  color: #f0f0f0;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.tip-btn:hover {
+  border-color: #00e5a0;
+  color: #00e5a0;
+}
+
+.tip-btn.active {
+  background: #00e5a0;
+  border-color: #00e5a0;
+  color: #0f1117;
+}
+
+.output-card {
+  background: #00e5a0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.output-card .card-title {
+  color: #0a3d2a;
+}
+
+.output-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.output-row:last-of-type {
+  border-bottom: none;
+}
+
+.output-label {
+  font-size: 14px;
+  color: #0a4030;
+  font-weight: 500;
+}
+
+.output-label small {
+  display: block;
+  font-size: 12px;
+  color: #1a6050;
+  margin-top: 2px;
+}
+
+.output-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: #051a12;
+}
+
+.output-value.big {
+  font-size: 32px;
+  color: #051a12;
+}
+
+#reset-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 13px;
+  background: transparent;
+  border: 1.5px solid rgba(0,0,0,0.2);
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a3d2a;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+#reset-btn:hover {
+  background: rgba(0,0,0,0.08);
 }
