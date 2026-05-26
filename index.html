@@ -13,6 +13,34 @@
       <!-- left card -->
       <div class="card">
         <p class="card-title">ENTER DETAILS</p>
+        <!-- Bill Amount -->
+        <div class="input-group">
+          <label for="bill">Bill Amount</label>
+          <div class="input-wrap">
+            <span class="prefix">Rs</span>
+            <input type="number" id="bill" placeholder="0.00" />
+          </div>
+          <p class="error-msg" id="bill-error"></p>
+        </div>
+
+        <!-- Tip % -->
+        <div class="input-group">
+          <label>Tip Percentage</label>
+          <div class="tip-buttons">
+            <button class="tip-btn" data-tip="10">10%</button>
+            <button class="tip-btn" data-tip="15">15%</button>
+            <button class="tip-btn" data-tip="20">20%</button>
+          </div>
+          <input type="number" id="tip" placeholder="Custom %" />
+          <p class="error-msg" id="tip-error"></p>
+        </div>
+
+        <!-- Number of People -->
+        <div class="input-group">
+          <label for="people">Number of People</label>
+          <input type="number" id="people" placeholder="1" />
+          <p class="error-msg" id="people-error"></p>
+        </div>
       </div>
       <!-- right card -->
       <div class="card output_card">
